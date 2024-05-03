@@ -1,4 +1,4 @@
-package arrays;
+
 
 import java.util.*;
 
@@ -28,8 +28,10 @@ public class twoDarrayUserInput {
             for(int j=0; j < cols; j++){
                 arr[i][j] = sc.nextInt();
             }
+            sc.close();
         }
         return arr;
+  
     }
 
     public static void main(String[] args) {
@@ -37,6 +39,6 @@ public class twoDarrayUserInput {
         int[][] arr = createArrayUserInput();
         printArray(arr);
 
-    }
+    } 
     
 }
